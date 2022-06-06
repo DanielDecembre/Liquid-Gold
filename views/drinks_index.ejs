@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Gold</title>
+</head>
+<body>
+<nav>
+    <a href='/drinks/new'>Create new Drinks</a>
+</nav>
+
+<h1> Here's the Local Drinks of the Week</h1>
+
+<% for (let i = 0; i < allDrinks.length; i++) { %>
+<p>
+    <a href="/drinks/show/<%= i %>">
+        <%= allDrinks[i].name %>
+    </a>&nbsp;&nbsp;&nbsp;
+    <a href="/drinks/delete/<%= i %>">remove</a>
+</p>
+<% } %>
+
+
+</body>
+</html>

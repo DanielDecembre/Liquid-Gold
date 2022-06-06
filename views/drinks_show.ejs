@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A glips into the Drinks</title>
+</head>
+<body>
+    <h1><%= drink.name %> Show Page</h1>
+    <p> This is the drink <%= drink.description %> description</p>
+
+<% if (drink.easyToMake) { %>
+    <p>This drink is easy to make</p>
+<% } else { %>
+<p> This drink is NOT easy to make</p>
+<% } %>
+
+
+<a href="/drinks"> Back to Drinks Index</a>
+</body>
+</html>
